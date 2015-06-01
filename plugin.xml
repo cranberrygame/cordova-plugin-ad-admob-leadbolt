@@ -24,11 +24,11 @@
 	<!-- ios -->
     <platform name="ios">
 		<header-file src="src/ios/AppTracker.h" />
-		
         <source-file src="src/ios/libAdapterAppTracker.a" framework="true" />
         <source-file src="src/ios/libAppTracker.a" framework="true" />
 	</platform>
 	
+	<!-- dependency -->
 	<dependency id="com.cranberrygame.cordova.plugin.ad.leadbolt" url="https://github.com/cranberrygame/cordova-plugin-ad-leadbolt" />
-	<dependency id="com.cranberrygame.cordova.plugin.ad.admob" url="https://github.com/cranberrygame/cordova-plugin-ad-admob" />
+	<dependency id="com.cranberrygame.cordova.plugin.ad.admob" url="https://github.com/cranberrygame/cordova-plugin-ad-admob" />	
 </plugin>
