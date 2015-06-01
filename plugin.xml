@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.cranberrygame.cordova.plugin.ad.admob.leadbolt"
+    version="1.0.0">
+	
+    <name>Cordova Admob-LeadBolt Mediation Plugin</name>
+    <description>Cordova Admob-LeadBolt Mediation Plugin</description>
+    <author>Sang Ki Kwon (Cranberrygame)</author>		
+    <license>MIT</license>
+    <keywords>cordova,plugin,ad,admob,monetisation,leadbolt,mediation</keywords>
+    <repo>https://github.com/cranberrygame/cordova-plugin-ad-admob</repo>
+    <issue>https://github.com/cranberrygame/cordova-plugin-ad-admob/issues</issue> 	
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+		
+	<!-- android -->
+    <platform name="android">
+        <source-file src="src/android/AdMobAppTracker.jar" target-dir="libs" />
+        <source-file src="src/android/AppTracker.jar" target-dir="libs" />
+    </platform>
+	
+	<!-- ios -->
+    <platform name="ios">
+		<header-file src="src/ios/AppTracker.h" />
+		
+        <source-file src="src/ios/libAdapterAppTracker.a" framework="true" />
+        <source-file src="src/ios/libAppTracker.a" framework="true" />
+	</platform>
+	
+	<dependency id="com.cranberrygame.cordova.plugin.ad.leadbolt" url="https://github.com/cranberrygame/cordova-plugin-ad-leadbolt" />
+	<dependency id="com.cranberrygame.cordova.plugin.ad.admob" url="https://github.com/cranberrygame/cordova-plugin-ad-admob" />
+</plugin>
